@@ -26,3 +26,9 @@
     text-decoration: none;
     
 }
+
+.msgText{
+    font-size: 18px;
+    font-weight: bold;
+    /* color: brown; */
+}

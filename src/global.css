@@ -5,15 +5,36 @@
     font-family: sans-serif;
 }
 
-.container {
+.divBlock{    
     max-width: 960px;
-    width: 100;
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
     margin: 0 auto;
 }
 
-:root {
-    --corPrincipal: #FACA25;
-    --corSecundaria: #111;
+.inputUsuario {
+    padding: 10px;
+    margin: 10px auto; /* Adicionado 'auto' para centralizar horizontalmente */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255,1.0);
 
-
+    &:focus {
+        outline: none;
+        border-color: #FACA25;
+        box-shadow: 0 0 10px rgba(250, 202, 37, 0.8);
+    }
 }
+
+    :root {
+        --corPrincipal: #FACA25;
+        --corSecundaria: #111;
+    }

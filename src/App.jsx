@@ -8,14 +8,21 @@ function App() {
 
   return (
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+      <div className="divBlock">
+        <input
+          type="text"
+          placeholder="Digite aqui o usuário Github..."
+          className="inputUsuario"
+          onBlur={(e) => setNomeUsuario(e.target.value)}
+        />
 
-      {nomeUsuario.length > 4 && (
-        <>
-          <Perfil nomeUsuario={nomeUsuario} />
-          <ReposList nomeUsuario={nomeUsuario} />
-        </>
-      )}
+        {nomeUsuario.length > 4 && (
+          <>
+            <Perfil nomeUsuario={nomeUsuario} />
+            <ReposList nomeUsuario={nomeUsuario} />
+          </>
+        )}
+      </div>
       {/* <Formulario /> */}
     </>
   );
